@@ -25,7 +25,7 @@
 - View user sign up date/time
 - Search for users by email address, phone number or sub ID (if own IdP)
 - [Disable MFA (if enabled and user activates)](#multi-factor-auth)
-- [Download CSV with info of all users](https://magic.link/docs/authentication/features/data-export)
+- [Download CSV with info of all users (Pro Package Feature)](https://magic.link/docs/authentication/features/data-export)
 ![users](https://github.com/magiclabs/onboarding-guide/assets/84942969/101abef3-ff88-436a-95d4-ec8cdcf9620b)
 #### [EMAIL LOGS](https://magic.link/docs/authentication/features/email-logs)
 - Event logs only available for email users
@@ -42,7 +42,7 @@
 #### [SOCIAL LOGINS](https://magic.link/docs/authentication/features/social-logins/oauth-implementation)
 - Social login requires configuration with each provider
 ![sociallogins](https://github.com/magiclabs/onboarding-guide/assets/84942969/03033899-b4b6-432a-8fba-d3f28a53d784)
-#### [MULTI-FACTOR AUTH](https://magic.link/docs/authentication/features/mfa)
+#### [MULTI-FACTOR AUTH (Pro Package Feature)](https://magic.link/docs/authentication/features/mfa)
 - Enabling Mobile App MFA login gives user ability to set a 2nd factor on authentication through app on mobile device (i.e. Google Authenticator)
 - The setting is triggered when app calls on the `showSettings` method on the [Web SDK User Module](https://magic.link/docs/api/client-side-sdks/web#user-module)
 - End user's 2nd factor can be disabled by app owner in [USER section of dashboard](#user-management)
@@ -101,8 +101,8 @@ Available on 6 networks; Ethereum, Base, Polygon, Optimism, Arbitrum, and Flow
 ![signconfmagiclinkseccheck](https://github.com/magiclabs/onboarding-guide/assets/84942969/24b496ee-6019-45ff-bc60-8bd973a66d13)
 #### [SESSION MANAGEMENT](https://magic.link/docs/authentication/security/session-management)
 - Default session length is 7 days and persists session via third-party cookies
-- Session length can be increased up to 90 days when Auto Refresh is enabled
-- Enabling Auto Refresh persists session in first-party context through DPoP mechanism
+- Session length can be increased up to 90 days when Auto Refresh is enabled (Pro Package Feature)
+- Enabling Auto Refresh persists session in first-party context through DPoP mechanism (Pro Package Feature)
 #### [ACCESS CONTROL](https://magic.link/docs/authentication/security/access-control)
 - Enabling Allow List is very restrictive, it **ONLY** allows those in that list to login via email auth methods or OAuth logins that have that email returned in scope
 - Enabling Block List blocks users in that list from login via email auth methods or Oauth logins that have that email returned in scope
